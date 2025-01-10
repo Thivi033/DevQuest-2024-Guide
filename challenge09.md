@@ -8,12 +8,12 @@ a. Get all feedback for a movie
 b. Show top 2 rated and bottom 2 rated feedbacks for a movie
 c. Sort feedbacks
 
-## a. get all feedback for a movie
+## a. Get all feedback for a movie
 
 The `getAllFeedbackForMovie()` function in the `feedbackRepository` retrieves all feedback for a movie from the database. After retrieving the feedback, it uses the `modifyFeedbackResponse()` function from the `feedbackController` to:
 
 1. Convert the `createdAt` attribute of each feedback object to a "days ago" format.
-2. Add the user's full name to each feedback object.
+2. Add the user's fullname to each feedback object.
 3. Remove movieId from the feedback object.
 
 Finally, it returns the modified feedback.
